@@ -1,0 +1,3131 @@
+[
+    {
+      "id": 1,
+      "node": "主路径敏化法",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 2,
+      "node": "中国第一个自行设计的编译系统",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 3,
+      "node": "知识工程语言TUILI",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 4,
+      "node": "通用系统程序设计语言XCY",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 5,
+      "node": "时段演算理论",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 6,
+      "node": "软件自动产生系统NDHD",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 7,
+      "node": "计算机插件的自动测试",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 8,
+      "node": "汉字字形设计系统 CCDS",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 9,
+      "node": "分布式计算系统正确性的组合式验证方法",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 10,
+      "node": "P语法",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 11,
+      "node": "FORTRAN编译系统",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 12,
+      "node": "ALGOL编译系统",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 13,
+      "node": "Algol 60语言",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 14,
+      "node": "107 机快速乘法 运算和并 / 串行存取指令操作等改进",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 15,
+      "node": "“晶体管瞬态特性理论模型”",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 16,
+      "node": "“挤压”磁芯",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 17,
+      "node": "多普勒观测系统",
+      "node_type": "技术",
+      "image": 3,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 18,
+      "node": "竺乃刚",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 19,
+      "node": "朱景义",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 20,
+      "node": "朱邦复",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 21,
+      "node": "周兴铭",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆",
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 22,
+      "node": "周明天",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 23,
+      "node": "周巢尘",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 24,
+      "node": "仲萃豪",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 25,
+      "node": "郑世荣",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 26,
+      "node": "章建斌",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 27,
+      "node": "张效祥",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 28,
+      "node": "张世龙",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 29,
+      "node": "张绮霞",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 30,
+      "node": "张绮 ",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 31,
+      "node": "张钹",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 32,
+      "node": "袁宏春",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 33,
+      "node": "虞浦帆",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 34,
+      "node": "杨声林",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 35,
+      "node": "杨芙清",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 36,
+      "node": "许孔时",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 37,
+      "node": "许家材",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 38,
+      "node": "徐献瑜",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 39,
+      "node": "徐家福",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 40,
+      "node": "夏培肃",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆",
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 41,
+      "node": "吴锡九",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 42,
+      "node": "吴克忠",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 43,
+      "node": "吴几康",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 44,
+      "node": "魏道政",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 45,
+      "node": "王正",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 46,
+      "node": "王遇科",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 47,
+      "node": "王选",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 48,
+      "node": "王继中",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 49,
+      "node": "王行刚",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 50,
+      "node": "汪成为",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 51,
+      "node": "唐泽圣",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 52,
+      "node": "谭浩强",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 53,
+      "node": "沈绪榜",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆",
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 54,
+      "node": "沈天慧",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 55,
+      "node": "沈昌祥",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 56,
+      "node": "阮鸿义",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 57,
+      "node": "区慎章",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 58,
+      "node": "倪光南",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 59,
+      "node": "莫根生",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 60,
+      "node": "闵乃大",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 61,
+      "node": "罗沛霖 ",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 62,
+      "node": "陆志刚",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 63,
+      "node": "陆汝钤",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 64,
+      "node": "刘易成",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 65,
+      "node": "刘世骅",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 66,
+      "node": "刘坤臣",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 67,
+      "node": "刘锦德",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 68,
+      "node": "刘斌",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 69,
+      "node": "林勋准",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 70,
+      "node": "李伯虎",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 71,
+      "node": "康鹏",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 72,
+      "node": "康继昌",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 73,
+      "node": "金怡濂",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》",
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 74,
+      "node": "蒋士騛",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 75,
+      "node": "黄玉珩",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 76,
+      "node": "黄天发",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 77,
+      "node": "黄令仪",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 78,
+      "node": "黄敞",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 79,
+      "node": "黄安南",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 80,
+      "node": "华罗庚",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 81,
+      "node": "胡世华",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 82,
+      "node": "胡启恒",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 83,
+      "node": "何泽仁",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 84,
+      "node": "何育江",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 85,
+      "node": "何新贵",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 86,
+      "node": "郭宗桂",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 87,
+      "node": "龚天富",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 88,
+      "node": "范新弼",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 89,
+      "node": "董韫美",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》",
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 90,
+      "node": "单宗肃",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 91,
+      "node": "慈云桂",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 92,
+      "node": "陈作人",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 93,
+      "node": "陈芷英",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 94,
+      "node": "陈力为",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 95,
+      "node": "陈俊亮",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 96,
+      "node": "陈景春",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 97,
+      "node": "陈光熙",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 98,
+      "node": "陈赓",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 99,
+      "node": "曹潍潞",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 100,
+      "node": "白经天",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 101,
+      "node": "第一代计算机",
+      "node_type": "时期",
+      "image": 1,
+      "value": 3,
+      "source": [
+        "其他来源",
+        "CCF历史记忆",
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 102,
+      "node": "第四代计算机",
+      "node_type": "时期",
+      "image": 1,
+      "value": 3,
+      "source": [
+        "其他来源",
+        "CCF历史记忆",
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 103,
+      "node": "第三代计算机",
+      "node_type": "时期",
+      "image": 1,
+      "value": 3,
+      "source": [
+        "其他来源",
+        "CCF历史记忆",
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 104,
+      "node": "第二代计算机",
+      "node_type": "时期",
+      "image": 1,
+      "value": 3,
+      "source": [
+        "其他来源",
+        "CCF历史记忆",
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 105,
+      "node": "准备阶段",
+      "node_type": "时期",
+      "image": 1,
+      "value": 3,
+      "source": [
+        "其他来源",
+        "CCF历史记忆",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 106,
+      "node": "中南计算所",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 107,
+      "node": "中国人民解放军军事工程学院",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 108,
+      "node": "中国第一批锗高频大功率晶 体管",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 109,
+      "node": "早期БЭСМ电子管电子计算机教材",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 110,
+      "node": "银河-仿1",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 111,
+      "node": "银河-II",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 112,
+      "node": "银河-1",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 113,
+      "node": "小型集成电路计算机(622机)",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 114,
+      "node": "我国第一台数字积分机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 115,
+      "node": "我国第一台宽行针型汉字打印机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 116,
+      "node": "我国第一个数学软件库",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 117,
+      "node": "提花机群控计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 118,
+      "node": "龙芯1号",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 119,
+      "node": "两机联机构成混合式441-B/C“数字仿真”机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 120,
+      "node": "集成电路的 KD-4 和 KD-5",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 121,
+      "node": "集成电路 KD-3 计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 122,
+      "node": "航空发动机试车台数据处理机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 123,
+      "node": "汉字轮廓矢量压缩技术",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 124,
+      "node": "国务院电子计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 125,
+      "node": "国内首台双处理器结构的大型计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 126,
+      "node": "国产441B晶体管计算机文档（讲义）",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 127,
+      "node": "隔离—阻塞振荡器",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 128,
+      "node": "高炮指挥仪—305 机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 129,
+      "node": "复旦 601 型电子积分机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 130,
+      "node": "二级管逻辑集成电路",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 131,
+      "node": "东风-113机载计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 132,
+      "node": "定点和浮点32位RISC微处理器芯片",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 133,
+      "node": "电子译报设备",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 134,
+      "node": "单板ISDN无阻塞交换器",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 135,
+      "node": "大型专家系统开发环境《天马》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 136,
+      "node": "大规模集成电路16位微计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 137,
+      "node": "程控线切割机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 138,
+      "node": "北大“红旗”计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 139,
+      "node": "ZD—I",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 140,
+      "node": "X-2",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 141,
+      "node": "X-1机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 142,
+      "node": "SSS-1数字式射击瞄准计算机（114机）",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 143,
+      "node": "MPP系统级芯片",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 144,
+      "node": "MPP计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 145,
+      "node": "M2大型模拟机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 146,
+      "node": "KD-2",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 147,
+      "node": "KD-1(107机)",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 148,
+      "node": "J-501机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 149,
+      "node": "J-105机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": []
+    },
+    {
+      "id": 150,
+      "node": "DS-2000程控数字市话交换机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 151,
+      "node": "DJS-K1 电子控制机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 152,
+      "node": "DJS-7（127 机）小型晶体管计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 153,
+      "node": "DJS-15 机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 154,
+      "node": "DJS—131小型多功能电子计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 155,
+      "node": "DJS-130集成电路计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 156,
+      "node": "DJS-050微型机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 157,
+      "node": "CCF终身成就奖",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 158,
+      "node": "BCY",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 159,
+      "node": "B501 型电灼式快速输出（打印）装置",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 160,
+      "node": "ALGOL-60 编译系统",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 161,
+      "node": "905 乙机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 162,
+      "node": "901晶体管计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 163,
+      "node": "863计划",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 164,
+      "node": "8 阶微分方程模拟机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 165,
+      "node": "753 机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 166,
+      "node": "719 晶体管计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 167,
+      "node": "718通用大型计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 168,
+      "node": "6912 集成电路中型计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 169,
+      "node": "655机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 170,
+      "node": "602 机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 171,
+      "node": "441-B晶体管通用电子计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 172,
+      "node": "320计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 173,
+      "node": "30 型直热式放大管",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 174,
+      "node": "200系列",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 175,
+      "node": "156计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 176,
+      "node": "150机操作系统",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 177,
+      "node": "150机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 178,
+      "node": "121 机（DJS-21）",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 179,
+      "node": "12 路载波机线路滤波器",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 180,
+      "node": "119电子管计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 181,
+      "node": "115机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 182,
+      "node": "113机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 183,
+      "node": "109乙机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 184,
+      "node": "109甲机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 185,
+      "node": "108甲晶体管计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 186,
+      "node": "108 乙机（DJS-6）",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 187,
+      "node": "107机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖",
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 188,
+      "node": "104机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆",
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 189,
+      "node": "103机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 190,
+      "node": "100系列",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 191,
+      "node": "030集成电路计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 192,
+      "node": "013机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 193,
+      "node": "0.5 毫米 ×0.3 毫米的超小型磁芯",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 194,
+      "node": "《总机介绍》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 195,
+      "node": "《中国计算机学会关于发展我国大型通用机的建议》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 196,
+      "node": "《英汉计算技术词汇》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 197,
+      "node": "《英汉计算机辞典》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 198,
+      "node": "《一个新的科学部门——自动快速电子计算机》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 199,
+      "node": "《线性网络中预 给工作递输函数由损耗网络元素实现的理论》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": []
+    },
+    {
+      "id": 200,
+      "node": "《数字计算机概论》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 201,
+      "node": "《数理逻 辑是应该重视的一门科学》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 202,
+      "node": "《输入设备》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 203,
+      "node": "《输出设备》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 204,
+      "node": "《使用手册》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 205,
+      "node": "《实用程序设计》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 206,
+      "node": "《实时系统软件设计初步》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 207,
+      "node": "《漫谈计算机》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 208,
+      "node": "《雷达》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 209,
+      "node": "《计算机原理》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 210,
+      "node": "《计算机科学技术百科全书》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 211,
+      "node": "《汉字输入和人机对话》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 212,
+      "node": "《高速电子计算机的一般描述和运算方法》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 213,
+      "node": "《高速电子计算机的算术运算装置和控制装置》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 214,
+      "node": "《高速电子计算机的存储装置》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 215,
+      "node": "《俄汉计算技术词汇》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 216,
+      "node": "《电子数字计算机的逻辑设计》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 217,
+      "node": "《电子计算机动态》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 218,
+      "node": "《电源》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 219,
+      "node": "《电路与插件》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 220,
+      "node": "《第三次全国电子计 算机专业学术会议论文选集》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 221,
+      "node": "《单板智能并行ISDN交换器》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 222,
+      "node": "《磁芯存储器》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 223,
+      "node": "《超大规模集成电路系统设计》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 224,
+      "node": "《M-3 小型通用电子计算机原理》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 225,
+      "node": "《BASIC 语言》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 226,
+      "node": "《441-B指令表》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 227,
+      "node": "《104电子计算机标准程序汇编》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 228,
+      "node": "《103机总结》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 229,
+      "node": "“神威”超级计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 230,
+      "node": "“全国联行往来账目监督核算”管理系统",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 231,
+      "node": "“平行短风路”机柜冷却通风方式",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 232,
+      "node": "“两弹一星”专用微计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 233,
+      "node": "“仓颉输入法”",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 234,
+      "node": "?757工程千万次计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": []
+    },
+    {
+      "id": 235,
+      "node": "《计算机学报》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 236,
+      "node": "《Journal of Computer Science and Technology》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 237,
+      "node": "第一台10亿次巨型机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 238,
+      "node": "数列处理计算机",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 239,
+      "node": "《线性网络中预给工作递输函数由损耗网络元素实现的理论》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 240,
+      "node": "《怎样用算法语言编程序》",
+      "node_type": "物件",
+      "image": 4,
+      "value": 2,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 241,
+      "node": "石油部地球物理勘探局",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 242,
+      "node": "北京大学",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 243,
+      "node": "中国人民解放军总字943部队",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 244,
+      "node": "中国人民解放军军事科学院系统工程研究院系统总体研究所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 245,
+      "node": "中国科学院数学与系统科学研究院",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖",
+        "其他来源"
+      ]
+    },
+    {
+      "id": 246,
+      "node": "中国科学院软件研究所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》",
+        "其他来源"
+      ]
+    },
+    {
+      "id": 247,
+      "node": "中国科学院计算技术研究所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆",
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》",
+        "其他来源"
+      ]
+    },
+    {
+      "id": 248,
+      "node": "中国科学院计算机网络信息中心",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖",
+        "其他来源"
+      ]
+    },
+    {
+      "id": 249,
+      "node": "中国科学院半导体所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》",
+        "其他来源"
+      ]
+    },
+    {
+      "id": 250,
+      "node": "中国科学院156工程处",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆",
+        "其他来源"
+      ]
+    },
+    {
+      "id": 251,
+      "node": "中国科学院",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖",
+        "徐祖哲《溯源中国计算机三校》",
+        "其他来源"
+      ]
+    },
+    {
+      "id": 252,
+      "node": "中国科学技术大学计算机专业",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 253,
+      "node": "中国科学技术大学",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": []
+    },
+    {
+      "id": 254,
+      "node": "中国互联网协会",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 255,
+      "node": "中国航天科工集团第二研究院",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 256,
+      "node": "中国电子学会计算机专业委员会",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 257,
+      "node": "中国电子学会计算机学会",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 258,
+      "node": "浙江大学",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 259,
+      "node": "邮电研究院",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 260,
+      "node": "应化所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 261,
+      "node": "信息与工程科学学部",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 262,
+      "node": "襄阳市计算机外部设备厂",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 263,
+      "node": "西工大机载计算机研制团队",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 264,
+      "node": "西北计算所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 265,
+      "node": "西北工业大学",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 266,
+      "node": "西北大学",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 267,
+      "node": "物理所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 268,
+      "node": "天津无线电研究所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 269,
+      "node": "十五所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 270,
+      "node": "上海无线电十三厂",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 271,
+      "node": "上海交通大学",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 272,
+      "node": "软件与微电子学院",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 273,
+      "node": "软件工程国家工程研究中心",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 274,
+      "node": "清华大学自动控制系",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 275,
+      "node": "清华大学",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆",
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 276,
+      "node": "华东研究所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": []
+    },
+    {
+      "id": 277,
+      "node": "华东计算所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 278,
+      "node": "华北计算技术研究所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 279,
+      "node": "航空135厂",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 280,
+      "node": "海军计算技术研究所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 281,
+      "node": "哈军工 441-C 小组",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 282,
+      "node": "哈尔滨军事工程学院",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 283,
+      "node": "国家统计局",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 284,
+      "node": "国家计委计算中心",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 285,
+      "node": "国防科技大学",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 286,
+      "node": "复旦大学",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》",
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 287,
+      "node": "东南大学",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 288,
+      "node": "东北物理所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 289,
+      "node": "电子自动化设备系",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 290,
+      "node": "电子所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 291,
+      "node": "第四机械工业部",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 292,
+      "node": "第七机械工业部",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 293,
+      "node": "大规模集成电路领导小组",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 294,
+      "node": "程控交换技术与通信网国家重点实验室",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 295,
+      "node": "成都电讯工程学院",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 296,
+      "node": "成电",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 297,
+      "node": "北京无线电三厂",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 298,
+      "node": "北京计算机三厂",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 299,
+      "node": "北京大学计算机科学技术系",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 300,
+      "node": "830厂",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 301,
+      "node": "738 厂",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 302,
+      "node": "“智能技术与系统”国家重点实验室",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF终身成就奖"
+      ]
+    },
+    {
+      "id": 303,
+      "node": "“银河”计算机国家技术鉴定组",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "CCF历史记忆"
+      ]
+    },
+    {
+      "id": 304,
+      "node": "李耀墀",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 305,
+      "node": "张振民",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 306,
+      "node": "江涛",
+      "node_type": "人物",
+      "image": 2,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 307,
+      "node": "北京大学计算中心",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 308,
+      "node": "科大计算机教研室",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    },
+    {
+      "id": 309,
+      "node": "华东所",
+      "node_type": "组织",
+      "image": 5,
+      "value": 1,
+      "source": [
+        "徐祖哲《溯源中国计算机三校》"
+      ]
+    }
+  ]
