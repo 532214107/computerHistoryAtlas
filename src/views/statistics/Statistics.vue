@@ -45,61 +45,7 @@ export default {
   data() {
     return {
       allData: {
-        entity_num: 17096,
-        entity: [
-          { name: "时期", value: 3649 },
-          { name: "人物", value: 3386 },
-          { name: "组织", value: 3411 },
-          { name: "技术", value: 6327 },
-          { name: "物件", value: 323 }
-        ],
-        linksnum: 10551,
-        links: [
-          { source: "组织", target: "人物", Inum: 3586.0 },
-          { source: "组织", target: "组织", Inum: 192.0 },
-          { source: "技术", target: "人物", Inum: 79.0 },
-          { source: "物件", target: "人物", Inum: 334.0 },
-          { source: "人物", target: "技术", Inum: 6343.0 },
-          { source: "技术", target: "组织", Inum: 17.0 }
-        ],
-        properties: [
-          { name: "类别", value: 20745 },
-          { name: "中文名", value: 17096 },
-          { name: "zhixingId", value: 17096 },
-          { name: "subname", value: 17096 },
-          { name: "description", value: 17096 },
-          { name: "keyId", value: 17096 },
-          { name: "label", value: 17096 },
-          { name: "taglist", value: 17096 },
-          { name: "名称", value: 17096 },
-          { name: "施行日期", value: 6327 },
-          { name: "发布人", value: 6327 },
-          { name: "发布令", value: 6327 },
-          { name: "发布时间", value: 6327 },
-          { name: "属性", value: 3649 },
-          { name: "所属地区", value: 3649 },
-          { name: "学校类型", value: 3649 },
-          { name: "创办时间", value: 3649 },
-          { name: "主要院系", value: 3649 },
-          { name: "占地面积", value: 3649 },
-          { name: "外文名", value: 3411 },
-          { name: "创始人", value: 3411 },
-          { name: "起源地", value: 3411 },
-          { name: "创始时间", value: 3411 },
-          { name: "类型", value: 3411 },
-          { name: "公司名称", value: 3386 },
-          { name: "公司性质", value: 3386 },
-          { name: "公司口号", value: 3386 },
-          { name: "员工数", value: 3386 },
-          { name: "成立时间", value: 3386 },
-          { name: "创建时间", value: 3386 },
-          { name: "创建人", value: 3386 },
-          { name: "年营业额", value: 3386 },
-          { name: "总部地点", value: 3386 },
-          { name: "最早被击落", value: 323 },
-          { name: "最早时间", value: 323 },
-          { name: "发明者", value: 323 }
-        ]
+        
       }
     };
   },

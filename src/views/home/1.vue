@@ -30,35 +30,31 @@
         </div>
       </div>
       <div class="source-bar">
-        <div class="source-bar__header">
+        <!-- <div class="source-bar__header">
           数据来源
-        </div>
-        <div class="source-bar__body">
-          <p v-for="item in sourceList" :key='item' :class="{opacity: sourcefilter.indexOf(item) > -1}" @click="changefiltersource(item)">{{item}}</p>
-        </div>
-      </div>
-      <div class="Number-bar">
+        </div> -->
         <div class="source-bar__body">
           <el-row>
-            <el-col :span="6">
+            <el-col :span="8">
               <div class="typeName">
                 节点:
               </div>
             </el-col>
-            <el-col :span="18">
-              <el-slider v-model="value1" :format-tooltip="(val)=> val + '%'" @change='changeValue1'></el-slider>
+            <el-col :span="16">
+              <el-slider v-model="value1" @change='changeValue1'></el-slider>
             </el-col>
           </el-row>
           <el-row>
-            <el-col :span="6">
+            <el-col :span="8">
               <div class="typeName">
                 关系:
               </div>
             </el-col>
-            <el-col :span="18">
-              <el-slider v-model="value2" :format-tooltip="(val)=> val + '%'" @change='changeValue2'></el-slider>
+            <el-col :span="16">
+              <el-slider v-model="value2" @change='changeValue1'></el-slider>
             </el-col>
           </el-row>
+          
         </div>
       </div>
     </div>
@@ -114,23 +110,16 @@
 import { Network, DataSet } from 'visjs-network'
 import nodesOptions from './nodes1.json'
 import edgesOptions from './relation_num1.json'
-import exportArea from './exportArea.json'
-
 import bigNodeImg from './assets/c0.png'
-
-import { searchFrameCondition, getGraph } from '@/api/search'
-
+import { searchFrameCondition } from '@/api/search'
 const images = [
   require('./assets/c0.png'),
   require('./assets/c1.svg'),
   require('./assets/c2.svg'),
   require('./assets/c3.svg'),
-  require('./assets/c4.svg'),
-  require('./assets/c5.svg'),
+  require('./assets/c4.svg')
 ]
-
 let network = null
-
 export default {
   data () {
     return {
@@ -166,90 +155,84 @@ export default {
           image: images[4]
         }
       ],
-      networkBarList: [],
-      sourceList: [],
-      filter: [],
-      sourcefilter: [],
-      clickNodeName: null,
-      nodeData: [],
-      linkData: [],
-      value1: 50,
-      value2: 50,
-      params: {
-        node_limit: 0.5,
-        link_limit: 0.5
+      networkBarList: [{
+        label: '准备阶段',
+        node: 105
+      }, {
+        label: '第一代计算机',
+        node: 101
+      }, {
+        label: '第二代计算机',
+        node: 104
+      }, {
+        label: '第三代计算机',
+        node: 103
+      }, {
+        label: '第四代计算机',
+        node: 102
       }
-    }
+      ],
+      filter: [],
+      clickNodeName: null,
+      value1: 0,
+      value2: 0,
+    } 
   },
   created () {
     this.init()
   },
-  methods: {  
+  watch:{
+    filter(){
+      this.init()
+    }
+  },
+  methods: {
     init () {
-      getGraph(this.params).then(res=>{
-        this.sourceList = res.source_types
-        this.entitySample = []
-        res.node_types.forEach((item, index)=>{
-          this.entitySample.push({
-            name: item,
-            image: images[index]
-          })
-        })
-        this.networkBarList = []
-        for(let key in res.four_generation){
-          this.networkBarList.push({
-            label: res.four_generation[key].name,
-            node: res.four_generation[key].value
-          })
-        }
-        this.filter = []
-        this.sourcefilter = []
-        this.initData(res.nodes, res.links)
-      })
-    },
-    initData(nodeList, linkList){
-      const nodes = nodeList.map((node, index) => {
-        let img = null
-        this.entitySample.forEach(item=>{
-          if(node.category == item.name){
-            img = item.image
+      let node = null
+      let nodesOptions1 = nodesOptions
+      console.log(nodesOptions1)
+      if(this.filter.length == 0){
+        node = nodesOptions1
+      }
+      this.filter.forEach(item => {
+         node = nodesOptions1.map((node, index) => {
+          if(node.node_type != item){
+            return node
           }
-        })
-        const nodeOption = {
-          id: node.id,
-          x: node.x ?? null,
-          y: node.y ?? null,
-          label: node.name,
-          title: node.name,
-          value: node.value ?? (4 + Math.ceil(Math.random() * 5)),
-          image: img,
-          shape: 'image',
-          node_type: node.category,
-          source: node.source
-        }
-        return nodeOption
+        }).filter(item => item)
+        nodesOptions1 = node
       })
+     const nodes = node.map((node, index) => {
+            const nodeOption = {
+              id: node.id,
+              x: node.x ?? null,
+              y: node.y ?? null,
+              label: node.node,
+              title: node.node,
+              value: node.value ?? (4 + Math.ceil(Math.random() * 5)),
+              image: images[node.image - 1],
+              shape: 'image'
+              // font: { color: '#fff' }
+            }
+            return nodeOption
+        })
       // create an array with edges
-      const edges = linkList.map((edge, index) => {
+      const edges = edgesOptions.list.map((edge, index) => {
         return {
-          from: edge.source ,
-          to: edge.target ,
+          from: edge.from,
+          to: edge.to,
+          // label: edge.type,
           width: edge.value ?? 3,
           dashes: edge.dashes ?? true,
           font: { align: 'middle' }
         }
       })
-      this.nodeData = nodes
-      this.linkData = edges
-      this.initChart(nodes, edges)
-    },
-    initChart(nodes, edgesOptions){
       this.$nextTick(() => {
         // create a network
         var container = document.getElementById('mynetwork')
         var data = {
           nodes: nodes,
-          edges: edgesOptions
+          edges: edges
         }
         var options = {
           layout: {
@@ -283,27 +266,30 @@ export default {
             enabled: true,
             barnesHut: {
               gravitationalConstant: -60000
+              // springConstant: 1
+              // springLength: 200
             },
             stabilization: { iterations: 3500 }
+            // minVelocity: 16
           }
         }
-
         network = new Network(container, data, options)
         network.on('click', (params) => {
           clearInterval(this.randomNodeInterval)
+          // console.log(params)
           params.event = '[original event]'
           if (params.nodes.length > 0) {
             this.dialogVisible = true
+            // this.nodeInfo = JSON.stringify(params, null, 4)
             const curNodeId = (params.nodes || [])[0]
             const curNode = nodes.find(node => {
               return node.id === curNodeId
             })
             this.searchFrameCondition(curNode.label)
           }
-
           if (params.edges.length > 0 && params.nodes.length === 0) {
             const { fromId, toId } = network.view.body.edges[params.edges[0]]
-            const edgeCur = edgesOptions.find(edge => {
+            const edgeCur = edgesOptions.list.find(edge => {
               return edge.from === fromId && edge.to === toId
             })
             this.edgeInfo = edgeCur
@@ -311,7 +297,7 @@ export default {
           }
         })
         network.once('beforeDrawing', function () {
-          network.focus(0, {
+          network.focus(2, {
             scale: 0.6
           })
         })
@@ -325,7 +311,6 @@ export default {
             network.setOptions(options)
           }, 200)
         })
-
         network.on('stabilizationProgress', (params) => {
           this.loading = true
           const widthFactor = params.iterations / params.total
@@ -333,23 +318,18 @@ export default {
         })
         network.once('stabilizationIterationsDone', () => {
           this.loading = false
-
           const focusRandomNodes = [105, 101, 104, 103, 102]
           let focusRandomNodeIndex = 0
           this.focusRandom(101)
         })
+        // console.log(network.setSize('90%'))
       })
     },
-
-    objectToArray (obj) {
-      return Object.keys(obj).map(function (key) {
-        obj[key].id = key
-        return obj[key]
-      })
-    },
+    
+    
+    
     focusRandom (nodeId) {
       var options = {
-        // position: {x:positionx,y:positiony}, // this is not relevant when focusing on nodes
         scale: 0.8,
         offset: { x: 0, y: 0 },
         animation: {
@@ -380,50 +360,16 @@ export default {
       }else{
         this.filter.splice(this.filter.indexOf(name), 1)
       }
-      this.filterData()
-    },
-    changefiltersource(name){
-      if(this.sourcefilter.indexOf(name) == -1){
-        this.sourcefilter.push(name)
-      }else{
-        this.sourcefilter.splice(this.sourcefilter.indexOf(name), 1)
-      }
-      
-      this.filterData()
-    },
-    filterData(){
-      let Cnode = [...this.nodeData]
-      this.sourcefilter.forEach(item => {
-        let node = Cnode.map((node, index) => {
-          if(node.source != item){
-            return node
-          }
-        }).filter(item => item)
-        Cnode = node
-      })
-      this.filter.forEach(item => {
-        let node = Cnode.map((node, index) => {
-          if(node.node_type != item){
-            return node
-          }
-        }).filter(item => item)
-        Cnode = node
-      })
-
-      this.initChart(Cnode, this.linkData)
     },
     changeValue1(val){
-      this.params.node_limit = val/100
-      this.init()
+      console.log(val)
     },
     changeValue2(val){
-      this.params.link_limit = val/100
-      this.init()
+      console.log(val)
     }
   }
 }
 </script>
-
 <style lang="less" scoped>
   .layout-header {
     display: flex;
@@ -434,12 +380,10 @@ export default {
     background: #2d2e42;
     z-index: 999;
   }
-
   .network-container {
     position: relative;
     height: calc(100vh - 90px);
   }
-
   .network-bar {
     display: flex;
     flex-direction: column;
@@ -468,12 +412,11 @@ export default {
       }
     }
   }
-
   .entity-bar {
     position: absolute;
     right: 5px;
     top: 8px;
-    width: 150px;
+    width: 100px;
     // height: 200px;
     padding: 15px 10px;
     background: rgba(000, 000, 000, .8);
@@ -481,7 +424,7 @@ export default {
     color: #fff;
     .entity-s-item {
       display: flex;
-      justify-content: start;
+      justify-content: center;
       align-items: center;
       margin-bottom: 10px;
       cursor: pointer;
@@ -500,7 +443,6 @@ export default {
       }
     }
   }
-
   .source-bar {
     position: absolute;
     right: 5px;
@@ -524,32 +466,6 @@ export default {
       }
     }
   }
-
-  .Number-bar{
-    position: absolute;
-    left: 150px;
-    bottom: 8px;
-    width: 230px;
-    background: rgba(000, 000, 000, 1);
-    border-radius: 6px;
-    color: #fff;
-    .source-bar__header {
-      font-weight: bold;
-      background: rgba(000, 000, 000, .9);
-      padding: 3px 15px;
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
-      line-height: 38px;
-    }
-    .source-bar__body {
-      padding: 10px 15px;
-      p {
-        line-height: 1.5;
-        cursor: pointer;
-      }
-    }
-  }
-
   .menus {
     flex: 1;
     display: flex;
@@ -565,7 +481,6 @@ export default {
       }
     }
   }
-
   #mynetwork {
     display: block;
     width: 100%;
@@ -575,23 +490,19 @@ export default {
   p {
     max-width:600px;
   }
-
   table {
     border-spacing: 0;
     border-collapse: collapse;
   }
-
   td, th {
     padding: 0;
     text-align: left;
   }
-
   .table {
     border: 1px solid #ddd;
     font-size: 14px;
     width: 100%;
   }
-
   .table>tbody>tr>td,
   .table>tbody>tr>th,
   .table>tfoot>tr>td,
@@ -603,7 +514,6 @@ export default {
     vertical-align: middle;
     border-top: 1px solid #ddd;
   }
-
   .table-bordered>tbody>tr>td,
   .table-bordered>tbody>tr>th,
   .table-bordered>tfoot>tr>td,
@@ -612,18 +522,18 @@ export default {
   .table-bordered>thead>tr>th {
     border: 1px solid #ddd;
   }
-
   .rangeBox{
     position: absolute;
   }
-
   .opacity{
     opacity: .5;
   }
-
   .nodeTitle{
     text-align: center;
     font-weight: bold;
     padding-bottom: 20px;
+  }
+  .typeName{
+    line-height: 38px;
   }
 </style>

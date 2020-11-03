@@ -53,7 +53,7 @@ export default {
             // edgeSymbolSize: [80, 10],
             edgeLabel: {
               normal: {
-                show: true,
+                show: false,
                 textStyle: {
                   fontSize: 20
                 },
@@ -80,7 +80,13 @@ export default {
                   }
                 }
               }
+            },
+            emphasis: {
+              edgeLabel:{
+                show: true
+              }
             }
+            
           }
         ]
       };

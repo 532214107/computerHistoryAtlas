@@ -1,5 +1,5 @@
 {
-  "name": "bao-ding-web",
+  "name": "computeristoryatlas",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -44,7 +44,7 @@
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "vue-template-compiler": "^2.6.10",
-    "webpack": "^4.0.0"
+    "webpack": "^5.3.2"
   },
   "eslintConfig": {
     "root": true,

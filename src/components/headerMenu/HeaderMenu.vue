@@ -22,6 +22,9 @@ export default {
       }, {
         label: '数据搜索',
         name: 'search'
+      },{
+        label: "信息抽取",
+        name: "informationExtraction"
       }]
     }
   }
@@ -35,9 +38,9 @@ export default {
     margin-left: 60px;
     .menu-item {
       color: #007acf;
-      font-size: 28px;
+      font-size: 24px;
       font-weight: bold;
-      padding: 0 50px;
+      padding: 0 40px;
       cursor: pointer;
       a {
         color: #007acf;

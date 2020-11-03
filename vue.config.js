@@ -1,7 +1,8 @@
 const port = 8080 // dev port
 
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production' ? '/computerhistoryatlas/' : '/',
+    // publicPath: process.env.NODE_ENV === 'production' ? '/computeristoryatlas/' : '/',
+    publicPath: './',
     css: {
         loaderOptions: {
             less: {

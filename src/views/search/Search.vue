@@ -18,7 +18,10 @@
               <div v-for="(asitem, index) in asList" :key="index" class="as-item">
                 <div class="as-item__title">{{ asitem.answer }}</div>
                 <div class="as-item__ent">
-                  <span class="as-item__ent-tag" >相关实体: </span>{{ asitem.nodes.join('；') }}
+                  <span class="as-item__ent-tag" >相关实体: </span>
+                  <span class="as-item__ent-tag_item" v-for="item in asitem.nodes" :key='item' @click="clickQuestion(item)">
+                    {{item}}
+                  </span>
                 </div>
               </div>
             </div>
@@ -302,6 +305,14 @@ export default {
     }
   }
 }
+
+.as-item__ent-tag_item{
+  cursor: pointer;
+  &:hover{
+    color: #007acf;
+  }
+}
+
 .questionTitle{
   font-size: 16px;
   font-weight: bold;

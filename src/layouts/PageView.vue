@@ -11,7 +11,7 @@
 
 <script>
 import headerMenu from '@/components/headerMenu'
-import logoImg from '@/assets/image/logo.png'
+import logoImg from '@/assets/image/logo1.png'
 
 export default {
   name: 'PageView',

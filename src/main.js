@@ -13,7 +13,13 @@ import './core/use'
 // import './permission' // permission control
 
 Vue.config.productionTip = false
-
+// 动态title
+router.beforeEach((to, from, next)=>{
+    if(to.meta.title){
+        document.title = to.meta.title
+    }
+    next()
+})
 // mount axios Vue.$http and this.$http
 // Vue.use(VueAxios)
 import echart from 'echarts'

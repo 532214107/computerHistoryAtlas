@@ -17,3 +17,11 @@ export const searchData = (params) => {
         params
     })
 }
+
+export const getGraph = (params) => {
+    return axios({
+        url: '/searchGraph/',
+        method: 'get',
+        params
+    })
+}
