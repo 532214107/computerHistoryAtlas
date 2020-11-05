@@ -5,6 +5,7 @@
                 <div slot="header" class="clearfix">
                     <span>文本内容与抽取结果三元组</span>
                     <el-button style="float: right; padding: 3px 0" type="text" @click="dialogVisible = true">更换文本</el-button>
+                    <el-button style="float: right; padding: 3px 0; margin-right: 20px;" type="text" @click="exportData">导出</el-button>
                 </div>
                 <div class="cardBody1" v-if="allData">
                     <div class="item" v-for="(item,key) in allData.text_spo" :key="key">
@@ -73,7 +74,7 @@ export default {
         return {
             dialogVisible: false,
             dialogVisible1: false,
-            textarea: '中国官方宣布，国务院总理李克强此次出访非洲，夫人程虹随行。《妄想》是香港男歌手张国荣的一首粤语歌曲，由林夕填词，唐奕聪谱曲，张国荣演唱。',
+            textarea: '王选（1937年2月5日—2006年2月13日），男，江苏无锡人，出生于上海，计算机文字信息处理专家，计算机汉字激光照排技术创始人，当代中国印刷业革命的先行者，被称为“汉字激光照排系统之父”，被誉为“有市场眼光的科学家”。',
             loading: false,
             allData: null,
             textarea1: null,
@@ -117,25 +118,40 @@ export default {
             let arr = this.textarea1.split('->')
             let isTo = true
             arr.forEach((item, index) => {
-                console.log(this.parText, item, this.parText.indexOf(item))
                 if(index!=1 && this.parText.indexOf(item) == -1){
                     isTo = false
                     return
                 }
             });
+            
             if(!isTo){
                 this.$message.error('所填写三元组不在原文中出现或没有连续出现。');
                 return
             }
+            let arr1 = [...data[this.parInd].spo_list[this.subInd]]
+            let arr2 = []
+            arr.forEach((item, index) => {
+               if(arr1.indexOf(item) == -1){
+                   arr2.push({
+                       label: item,
+                       name: arr1[index]
+                   })
+               }
+            })
             data[this.parInd].spo_list[this.subInd] = arr
+            this.allData.nodes.forEach(item=>{
+                arr2.forEach(i => {
+                    if(item.name == i.name){
+                        item.name = i.label
+                    }
+                })
+                
+            })
+            console.log(this.allData.nodes)
             this.allData.text_spo = data
             this.dialogVisible1 = false
-            let formData = new FormData();
-                formData.append("text_spo", JSON.stringify(data))
-
-            postExtraction(formData).then(res=>{
-                console.log(res)
-            })
+            this.initchartBox(this.allData)
+            
         },
         initchartBox(data){  
             let chart = this.$echart.init(document.getElementById('chartBox'))
@@ -216,7 +232,8 @@ export default {
                     categories: categories,
                     lineStyle: {
                         color: 'source',
-                        curveness: 0.3
+                        curveness: 0.3,
+                        width: 3
                     },
                     emphasis: {
                         lineStyle: {
@@ -232,8 +249,15 @@ export default {
                     animationDuration: 2000
                 }]
             }
+            chart.clear()
             chart.setOption(option)
-            console.log(links, nodes)
+        },
+        exportData(){
+            let formData = new FormData();
+                formData.append("text_spo", JSON.stringify(this.allData));
+            postExtraction(formData).then(res=>{
+               window.open('/extraction_export/?id='+res.id)
+            })
         }
     },
     mounted(){

@@ -25,6 +25,9 @@ export default {
       },{
         label: "信息抽取",
         name: "informationExtraction"
+      },{
+        label: '数据管理',
+        name: 'management'
       }]
     }
   }
@@ -40,7 +43,7 @@ export default {
       color: #007acf;
       font-size: 24px;
       font-weight: bold;
-      padding: 0 40px;
+      padding: 0 30px;
       cursor: pointer;
       a {
         color: #007acf;

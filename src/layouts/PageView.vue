@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <div class="layout-header">
-      <img :src="logoImgUrl" alt="logo">
+      <img style="cursor: pointer;" :src="logoImgUrl" alt="logo" @click="$router.push('/show')">
       <header-menu ref="headerMenu"></header-menu>
     </div>
 
@@ -54,5 +54,6 @@ export default {
     padding: 0 60px;
     background: #2d2e42;
     z-index: 999;
+    
   }
 </style>

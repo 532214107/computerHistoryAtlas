@@ -46,12 +46,18 @@ export const constantRouterMap = [
         component: () => import('@/views/informationExtraction'),
         meta: { title: '信息抽取 - 计算机历史图谱', keepAlive: false } // 动态title
       },
-      // {
-      //   path: '/test',
-      //   name: 'test',
-      //   component: () => import('@/views/test'),
-      //   meta: { title: '测试 - 计算机历史图谱', keepAlive: false } // 动态title
-      // },
+      {
+        path: '/management',
+        name: 'management',
+        component: () => import('@/views/management'),
+        meta: { title: '数据管理 - 计算机历史图谱', keepAlive: false } // 动态title
+      },
+      {
+        path: '/show',
+        name: 'management',
+        component: () => import('@/views/show'),
+        meta: { title: '展示 - 计算机历史图谱', keepAlive: false } // 动态title
+      },
     ]
   }
 ]
