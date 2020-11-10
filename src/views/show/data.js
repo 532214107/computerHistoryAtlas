@@ -815,9 +815,80 @@ export const data = {
       "llength": 0,
       "neoId": 1,
       "value": 2
+     },
+     {
+      "id": 102,
+      "name": "《计算机研究与发展》",
+      "category": "书籍文献",
+      "llength": 0,
+      "neoId": 1,
+      "value": 2
+     },
+     {
+      "id": 103,
+      "name": "钱三强",
+      "category": "人物",
+      "llength": 0,
+      "neoId": 1,
+      "value": 2
+     },
+     {
+      "id": 104,
+      "name": "华罗庚",
+      "category": "人物",
+      "llength": 0,
+      "neoId": 1,
+      "value": 2
+     },
+     {
+      "id": 105,
+      "name": "钱学森",
+      "category": "人物",
+      "llength": 0,
+      "neoId": 1,
+      "value": 2
+     },
+     {
+      "id": 106,
+      "name": "东方红卫星",
+      "category": "物件",
+      "llength": 0,
+      "neoId": 1,
+      "value": 2
+     },
+     {
+      "id": 107,
+      "name": "中国计算机学会",
+      "category": "组织",
+      "llength": 0,
+      "neoId": 1,
+      "value": 2
+     },
+     {
+      "id": 108,
+      "name": "钱天白",
+      "category": "人物",
+      "llength": 0,
+      "neoId": 1,
+      "value": 2
+     },
+     {
+      "id": 109,
+      "name": "王湘浩",
+      "category": "人物",
+      "llength": 0,
+      "neoId": 1,
+      "value": 2
      }
     ],
     "links": [
+     {
+      "level": 1,
+      "name": "创办",
+      "source": 55,
+      "target": 102,
+      "id": 0
+     },
      {
       "level": 1,
       "name": "研制者",
