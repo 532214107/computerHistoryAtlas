@@ -16,16 +16,15 @@ export const getUserSchema = (params) => {
  */
 export const getSingleCategory = (data) => {
     return axios({
-        url: '/getSingleCategory/',
+        url: '/filterSearch/',
         method: 'post',
         data
     })
 }
 
 
-// 获取表格内容 =
 /**
- * 
+ * 删除属性
  * @data {deleteNeoIds: 'id' , label: '组织'} data 
  */
 export const deleteEntities = (data) => {
@@ -35,9 +34,9 @@ export const deleteEntities = (data) => {
         data
     })
 }
-// 属性修改 =
+
 /**
- * 修改
+ * 属性修改
  * @data {
  * label: "组织"
  * updateNode: '属性字拼接的符串'
@@ -50,9 +49,9 @@ export const modifyEntities = (data) => {
         data
     })
 }
-// 导出 =
+
 /**
- * 修改
+ * 导出
  * @data {
  * entityName: ""
    label: "组织"
@@ -61,6 +60,18 @@ export const modifyEntities = (data) => {
 export const csvDownload = (data) => {
     return axios({
         url: '/csvDownload/',
+        method: 'post',
+        data
+    })
+}
+
+/**
+ * 入库
+ * 
+ */
+export const batchUpload = (data) => {
+    return axios({
+        url: '/batchUpload/',
         method: 'post',
         data
     })
