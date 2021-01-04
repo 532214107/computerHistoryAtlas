@@ -3,6 +3,7 @@
       <div class="header">
           <el-button :type="buttonType == '图谱管理' ? 'primary' : ''" @click="clickButton('图谱管理')">图谱管理</el-button>
           <el-button :type="buttonType == '批量上传' ? 'primary' : ''" @click="clickButton('批量上传')">批量上传</el-button>
+          <el-button :type="buttonType == '手动上传' ? 'primary' : ''" @click="clickButton('手动上传')">手动上传</el-button>
       </div>
       <div class="content" v-show="buttonType == '图谱管理'">
           <div style="text-align: right;">
@@ -162,6 +163,64 @@
                 </div>
           </div>
       </div>
+
+      <div class="content" v-show="buttonType == '手动上传'">
+          <el-button size="small" :type="subButtonType == '上传实体' ? 'primary' : ''" @click="clickSubButton('上传实体')">上传实体</el-button>
+          <el-button size="small" :type="subButtonType == '上传关系' ? 'primary' : ''" @click="clickSubButton('上传关系')">上传关系</el-button>
+
+          <div class="uploadEntityContent" v-show="subButtonType == '上传实体'">
+              <p>新增实体</p>
+              <div>
+                  请选择实体类别:
+                   <el-select size="small" style="width: 200px;" v-model="uploadEntityType" placeholder="请选择">
+                        <el-option
+                            v-for="(item, index) in selectOption"
+                            :key="index"
+                            :label="item.entity_name"
+                            :value="item.entity_name">
+                        </el-option>
+                    </el-select>
+              </div>
+              <div class="uploadEntityBody">
+                  <div class="operation">
+                        <el-button @click="entityAddProperty" type="primary" size="small">添加属性</el-button>
+                        <el-button @click="entitySave" type="primary" size="small">保存</el-button>
+                  </div>
+                    <el-table
+                        :data="uploadEntityTableList"
+                        border
+                    >
+                        <el-table-column
+                        label="实体属性"
+                        width="300px">
+                            <template slot-scope="scope">
+                                <el-input placeholder="请输入实体属性名称" size="small" v-model="scope.row.name"></el-input>
+                            </template>
+                        </el-table-column>
+                        <el-table-column
+                        label="属性值"
+                        prop="value">
+                            <template slot-scope="scope">
+                                <el-input 
+                                    type="textarea"
+                                    :autosize="{ minRows: 2, maxRows: 4}"
+                                    size="small" 
+                                    v-model="scope.row.value"
+                                    placeholder="请输入实体属性值"
+                                ></el-input>
+                            </template>
+                        </el-table-column>
+                        <el-table-column
+                            label="操作"
+                            width="50">
+                            <template slot-scope="scope">
+                                <i @click="deletUploadEntity(scope.row)" class="el-icon-circle-close color"></i>
+                            </template>
+                        </el-table-column>
+                    </el-table>
+              </div>
+          </div>
+      </div>
       <!-- 详情信息弹框 -->
         <el-dialog
             title="详情信息"
@@ -218,7 +277,8 @@ import {
     csvDownload,
     modifyEntities,
     deleteEntities,
-    batchUpload
+    batchUpload,
+    singleUpload
 } from '@/api/management'
 import { Form } from 'element-ui'
 
@@ -227,6 +287,7 @@ export default {
     data(){
         return {
             buttonType: '图谱管理',
+            subButtonType: "上传实体",
             from: {
                 entity_name: null,
                 label: null,
@@ -258,7 +319,10 @@ export default {
             matchedList: [],
             newStandardList: [],
             newMatchList: [],
-            userSchemaRes: null
+            userSchemaRes: null,
+            uploadEntityType: null,
+            properties: [],
+            uploadEntityTableList: []
         }
     },
     mounted(){
@@ -280,7 +344,13 @@ export default {
             this.buttonType = val
             if(val == '批量上传'){
                 this.init()
+            }else if(val == '手动上传'){
+                this.uploadEntityType = null
+                this.uploadEntityTableList = []
             }
+        },
+        clickSubButton(val){
+            this.subButtonType = val
         },
         // 搜索
         search(){
@@ -352,7 +422,6 @@ export default {
                 link.click();
             })
         },
-        
         // 修改表格数据
         changeTableData(row, index){
             if(index == 1){
@@ -412,6 +481,21 @@ export default {
                 value: ''
             })
         },
+        // 手动上传添加属性
+        entityAddProperty(){
+            if(this.uploadEntityType!=null){
+                this.uploadEntityTableList.push({
+                    name: '',
+                    value: ''
+                })
+            }else{
+                this.$message({
+                    type: "warning",
+                    message: "请先选择实体"
+                })
+            }
+            
+        },
         // 删除属性
         deleteProperty(row){
             this.$confirm('此操作将永久删除, 是否继续?', '提示', {
@@ -421,10 +505,30 @@ export default {
             }).then(() => {
                 this.dialogTableList = this.dialogTableList.filter((item, index) => {
                     let a = this.dialogTableList.indexOf(row) != index
-                    console.log(a)
                     return a
                 })
-                console.log(this.dialogTableList)
+            }).catch(() => {
+                        
+            });
+        },
+        // 删除手动上传属性
+        deletUploadEntity(row){
+            if(row.name == 'name'){
+                this.$message({
+                    type: "warning",
+                    message: "此属性不允许删除，且必填。"
+                })
+                return
+            }
+            this.$confirm('此操作将永久删除, 是否继续?', '提示', {
+                confirmButtonText: '确定',
+                cancelButtonText: '取消',
+                type: 'warning'
+            }).then(() => {
+                this.uploadEntityTableList = this.uploadEntityTableList.filter((item, index) => {
+                    let a = this.uploadEntityTableList.indexOf(row) != index
+                    return a
+                })
             }).catch(() => {
                         
             });
@@ -456,6 +560,41 @@ export default {
                 this.search()
                 this.handleClose()
             })
+        },
+        // 手动上传实体保存
+        entitySave(){
+            if(this.uploadEntityType!=null){
+                let obj = {}
+                this.uploadEntityTableList.forEach(item=>{
+                    obj[item.name] = item.value
+                })
+                if(obj.name){
+                    obj.category = this.uploadEntityType
+                    let formData = new FormData()
+                    formData.append("node", JSON.stringify(obj))
+                    singleUpload(formData).then(res=>{
+                        if(res.status == "success"){
+                            this.$message({
+                                type: "success",
+                                message: "新增成功"
+                            })
+                            this.uploadEntityType = null
+                            this.uploadEntityTableList = []
+                        }
+                    })
+                }else{
+                    this.$message({
+                        type: "warning",
+                        message: "请填写name属性的属性值。"
+                    })
+                }
+            }else{
+                this.$message({
+                    type: "warning",
+                    message: "请先选择实体"
+                })
+            }
+            
         },
         // 点击高级检索
         clickAdvancedSearch(){
@@ -597,6 +736,23 @@ export default {
                 this.newMatchList.push(item[0])
                 this.newStandardList.push(item[1])
             })
+        },
+        uploadEntityType(val){
+            let {entities} = this.userSchemaRes
+            let properties = null
+            entities.forEach(item=>{
+                if(item.entity_name == val){
+                    properties = Object.keys(item.properties)
+                }
+            })
+            properties.forEach(item=>{
+                if(item != 'category'){
+                    this.uploadEntityTableList.push({
+                        name: item,
+                        value: ""
+                    })
+                }
+            })
         }
     }
 }
@@ -609,8 +765,8 @@ export default {
         padding-top: 20px;
         .content{
             width: 100%;
-            margin-top: 20px;
-            padding-top: 20px;
+            margin: 20px 0 30px 0;
+            padding: 20px;
             background-color: #fff;
             border-radius: .5em;
             min-height: 460px;
@@ -663,14 +819,14 @@ export default {
             }
             .dialogContent{
                 padding-top: 20px;
-                .color{
-                    font-size: 24px;
-                    color: rgb(255, 34, 0);
-                    cursor: pointer;
-                }
+                
             }
         }
-
+        .color{
+            font-size: 24px;
+            color: rgb(255, 34, 0);
+            cursor: pointer;
+        }
         .uploadContent{
             width: 80%;
             margin: 20px auto;
@@ -702,6 +858,22 @@ export default {
                     li.waring{
                         color: #cf9236;
                     }
+                }
+            }
+        }
+        .uploadEntityContent{
+            width: 100%;
+            margin: 20px 0 30px 0;
+            &>p{
+                text-align: center;
+                font-size: 24px;
+                
+            }
+            .uploadEntityBody{
+                padding: 20px 0 20px 0;
+                &>.operation{
+                    padding: 0px 0 20px 0;
+                    float: right;
                 }
             }
         }

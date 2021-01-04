@@ -77,3 +77,15 @@ export const batchUpload = (data) => {
     })
 }
 
+
+/**
+ * 手动上传
+ * 
+ */
+export const singleUpload = (data) =>{
+    return axios({
+        url: '/singleUpload/',
+        method: 'post',
+        data
+    })
+}
