@@ -1,9 +1,9 @@
 <template>
   <div class="management">
       <div class="header">
-          <el-button :type="buttonType == '图谱管理' ? 'primary' : ''" @click="clickButton('图谱管理')">图谱管理</el-button>
-          <el-button :type="buttonType == '批量上传' ? 'primary' : ''" @click="clickButton('批量上传')">批量上传</el-button>
-          <el-button :type="buttonType == '手动上传' ? 'primary' : ''" @click="clickButton('手动上传')">手动上传</el-button>
+          <el-button :type="buttonType == '图谱管理' ? 'primary' : ''" @click="clickButton('图谱管理')">数据删除修改</el-button>
+          <el-button :type="buttonType == '手动上传' ? 'primary' : ''" @click="clickButton('手动上传')">数据新增</el-button>
+          <el-button :type="buttonType == '批量上传' ? 'primary' : ''" @click="clickButton('批量上传')">数据导入批量新增</el-button>
       </div>
       <div class="content" v-show="buttonType == '图谱管理'">
           <div style="text-align: right;">
@@ -128,7 +128,7 @@
                             <div class="gridTitle">待匹配信息</div>
                             <ul class="match_box">
                                 <li v-for="(item, index) in uploadRes.table_header" 
-                                :class="{action: match_action == item, waring: newMatchList.indexOf(item) != -1}" 
+                                :class="{action: match_action == item}" 
                                 @click="click_match_action(item)" :key="index">{{item}}</li>
                             </ul>
                         </div>
@@ -165,8 +165,8 @@
       </div>
 
       <div class="content" v-show="buttonType == '手动上传'">
-          <el-button size="small" :type="subButtonType == '上传实体' ? 'primary' : ''" @click="clickSubButton('上传实体')">上传实体</el-button>
-          <el-button size="small" :type="subButtonType == '上传关系' ? 'primary' : ''" @click="clickSubButton('上传关系')">上传关系</el-button>
+          <el-button size="small" :type="subButtonType == '上传实体' ? 'primary' : ''" @click="clickSubButton('上传实体')">新增实体</el-button>
+          <el-button size="small" :type="subButtonType == '上传关系' ? 'primary' : ''" @click="clickSubButton('上传关系')">新增关系</el-button>
 
           <div class="uploadEntityContent" v-show="subButtonType == '上传实体'">
               <p>新增实体</p>
@@ -218,6 +218,110 @@
                             </template>
                         </el-table-column>
                     </el-table>
+              </div>
+          </div>
+          <div class="relationshipContent" v-show="subButtonType == '上传关系'">
+              <p>新增关系</p>
+              <div style="padding: 0 ; text-align: right;">
+                  <el-button @click="relationshipSave" type="primary">保存关系</el-button>
+              </div>
+              <div class="relationshipBody">
+                  <el-row :gutter="20">
+                      <el-col :span="8">
+                          <div class="b_div">
+                                <div style="width: 80%;margin: 15px auto 0;">
+                                    <el-input size="small" placeholder="请输入实体名称" v-model="entityName1" class="input-with-select">
+                                        <el-button slot="append" icon="el-icon-search" @click="searchEntity(1)"></el-button>
+                                    </el-input>
+                                </div>
+                                <el-table
+                                    :data='tableData1'   
+                                    style="width: 90%; margin: 0 auto" 
+                                    v-loading="loading1"
+                                    size="small"
+                                    highlight-current-row
+                                    @current-change="handleCurrentChange1"
+                                    ref="singleTable1"
+                                >
+                                    <el-table-column
+                                        type="index"
+                                        width="50">
+                                    </el-table-column>
+                                    <el-table-column
+                                        prop="name"
+                                        label="name">
+                                    </el-table-column>
+                                    <el-table-column
+                                        prop="category"
+                                        label="类型"
+                                        width="100">
+                                    </el-table-column>
+                                </el-table>
+                          </div>
+                      </el-col>
+                      <el-col :span="8">
+                          <div class="b_div">
+                              <div style="width: 80%;margin: 15px auto 0;">
+                                    <el-input size="small" placeholder="请输入实体名称" v-model="entityName2" class="input-with-select">
+                                        <el-button slot="append" icon="el-icon-search" @click="searchEntity(2)"></el-button>
+                                    </el-input>
+                                </div>
+                                <el-table
+                                    :data='tableData2'   
+                                    style="width: 90%; margin: 0 auto" 
+                                    v-loading="loading2"
+                                    size="small"
+                                    highlight-current-row
+                                    @current-change="handleCurrentChange2"
+                                    ref="singleTable2"
+                                >
+                                    <el-table-column
+                                        type="index"
+                                        width="50">
+                                    </el-table-column>
+                                    <el-table-column
+                                        prop="name"
+                                        label="name">
+                                    </el-table-column>
+                                    <el-table-column
+                                        prop="category"
+                                        label="类型"
+                                        width="100">
+                                    </el-table-column>
+                                </el-table>
+                          </div>
+                      </el-col>
+                      <el-col :span="8">
+                          <div class="b_div">
+                              <el-table
+                                    :data='tableData3'   
+                                    style="width: 90%; margin: 0 auto" 
+                                    size="small"
+                                >
+                                    <el-table-column
+                                        prop="name1"
+                                        label="实体">
+                                    </el-table-column>
+                                    <el-table-column
+                                        prop="category"
+                                        label="关系"
+                                        width="100">
+                                    </el-table-column>
+                                    <el-table-column
+                                        prop="name2"
+                                        label="实体">
+                                    </el-table-column>
+                                    <el-table-column
+                                        label="操作"
+                                        width="50">
+                                        <template slot-scope="scope">
+                                            <i @click="delettableData3Row(scope.row)" class="el-icon-circle-close color"></i>
+                                        </template>
+                                    </el-table-column>
+                                </el-table>
+                          </div>
+                      </el-col>
+                  </el-row>
               </div>
           </div>
       </div>
@@ -322,7 +426,16 @@ export default {
             userSchemaRes: null,
             uploadEntityType: null,
             properties: [],
-            uploadEntityTableList: []
+            uploadEntityTableList: [],
+            entityName1: null,
+            entityName2: null,
+            tableData1: [],
+            tableData2: [],
+            tableData3: [],
+            loading1: false,
+            loading2: false,
+            currentRow1: null,
+            currentRow2: null
         }
     },
     mounted(){
@@ -351,6 +464,15 @@ export default {
         },
         clickSubButton(val){
             this.subButtonType = val
+            this.uploadEntityType = null
+            this.uploadEntityTableList = []
+            this.entityName1 = null
+            this.entityName2 = null
+            this.tableData1 = []
+            this.tableData2 = []
+            this.tableData3 = []
+            this.currentRow1 = null
+            this.currentRow2 = null
         },
         // 搜索
         search(){
@@ -571,6 +693,7 @@ export default {
                 if(obj.name){
                     obj.category = this.uploadEntityType
                     let formData = new FormData()
+                    formData.append("type", "node")
                     formData.append("node", JSON.stringify(obj))
                     singleUpload(formData).then(res=>{
                         if(res.status == "success"){
@@ -580,6 +703,11 @@ export default {
                             })
                             this.uploadEntityType = null
                             this.uploadEntityTableList = []
+                        }else{
+                            this.$message({
+                                type: "error",
+                                message: res.status
+                            })
                         }
                     })
                 }else{
@@ -631,27 +759,13 @@ export default {
         },
         // 点击待匹配信息
         click_match_action(val){
-            let isClick = true
-            this.matchedList.forEach(item => {
-                if(item[0] == val){
-                    isClick = false
-                }
-            })
-            if(isClick){
-                if(this.Standard_action){
-                    this.matchedList.push([val, this.Standard_action])
-                    this.match_action = null
-                    this.Standard_action = null
+            if(this.Standard_action){
+                this.matchedList.push([val, this.Standard_action])
+                this.match_action = null
+                this.Standard_action = null
 
-                }else{
-                    this.match_action = val
-                }
-                
             }else{
-                this.$message({
-                    type: "warning",
-                    message: "请勿重复匹配"
-                })
+                this.match_action = val
             }
         },
         // 点击标准属性信息
@@ -696,6 +810,7 @@ export default {
                 property_to_col
             }
             let formData = new FormData()
+            this.userSchemaRes.map = []
             this.userSchemaRes.map.push(req)
             for(let key in this.userSchemaRes){
                 formData.append(key, JSON.stringify(this.userSchemaRes[key]))
@@ -726,7 +841,129 @@ export default {
             this.$refs.upload.clearFiles();
             this.upLoadSelectValue = null
             this.active = 0
+        },
+        /**
+         * 新建关系
+         */
+        // 实体检索
+        searchEntity(num){
+            if(num == 1){
+                this.loading1 = true
+                getSingleCategory({entity_name: this.entityName1}).then(res=>{
+                    this.loading1 = false
+                    this.tableData1 = res
+                })
+            }else if(num == 2){
+                this.loading2 = true
+                getSingleCategory({entity_name: this.entityName2}).then(res=>{
+                    this.loading2 = false
+                    this.tableData2 = res
+                })
+            }
+        },
+        // 选中实体
+        handleCurrentChange1(val){
+            this.currentRow1 = val
+        },
+        handleCurrentChange2(val){
+            if(!val){
+                return
+            }
+            if(this.currentRow1){
+                this.currentRow2 = val
+                if(this.currentRow1.neoId == this.currentRow2.neoId){
+                    this.$message({
+                        message: "不能选择实体本身",
+                        type: "warning"
+                    })
+                    return 
+                }
+                this.$prompt('请输入关系', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    inputPattern: /\S/,
+                    inputErrorMessage: '关系不能为空'
+                }).then(({ value }) => {
+                    let obj = {
+                        name1: `${this.currentRow1.name}(${this.currentRow1.category})`,
+                        category: value,
+                        name2: `${this.currentRow2.name}(${this.currentRow2.category})`,
+                        entityRow1: this.currentRow1,
+                        entityRow2: this.currentRow2
+                    }
+                    this.tableData3.unshift(obj)
+                    this.$refs.singleTable1.setCurrentRow();
+                    this.$refs.singleTable2.setCurrentRow();
+                }).catch(() => {
+                    this.$message({
+                        type: 'info',
+                        message: '取消输入'
+                    });       
+                });
+            }else{
+                this.$message({
+                    type: "warning",
+                    message: "请先选择左侧实体"
+                })
+            }
+        },
+        // 删除关系
+        delettableData3Row(row){
+            this.$confirm('此操作将永久删除, 是否继续?', '提示', {
+                confirmButtonText: '确定',
+                cancelButtonText: '取消',
+                type: 'warning'
+            }).then(() => {
+                this.tableData3 = this.tableData3.filter((item, index) => {
+                    let a = this.tableData3.indexOf(row) != index
+                    return a
+                })
+            }).catch(() => {
+                        
+            });
+        },
+        // 保存关系
+        relationshipSave(){
+            if(this.tableData3.length == 0){
+                this.$message({
+                    type: "warning",
+                    message: "请新建实体关系。"
+                })
+                return 
+            }
+            let arr = []
+            this.tableData3.forEach(item=>{
+                let obj = {}
+                obj.rel_name = item.category
+                obj.left_id = item.entityRow1.neoId
+                obj.right_id = item.entityRow2.neoId
+                arr.push(obj)
+            })
+            let formData = new FormData()
+            formData.append("type", "link")
+            formData.append("link", JSON.stringify(arr))
+            singleUpload(formData).then(res=>{
+                if(res.status == "success"){
+                    this.$message({
+                        type: "success",
+                        message: "上传成功"
+                    })
+                    this.entityName1 = null
+                    this.entityName2 = null
+                    this.tableData1 = []
+                    this.tableData2 = []
+                    this.tableData3 = []
+                    this.currentRow1 = null
+                    this.currentRow2 = null
+                }else{
+                    this.$message({
+                        type: "error",
+                        message: res.status
+                    })
+                }
+            })
         }
+        
     },
     watch: {
         matchedList(val){
@@ -745,6 +982,7 @@ export default {
                     properties = Object.keys(item.properties)
                 }
             })
+            this.uploadEntityTableList = []
             properties.forEach(item=>{
                 if(item != 'category'){
                     this.uploadEntityTableList.push({
@@ -769,7 +1007,7 @@ export default {
             padding: 20px;
             background-color: #fff;
             border-radius: .5em;
-            min-height: 460px;
+            min-height: 600px;
             padding-bottom: 30px;
             .inputBox{
                 padding: 20px;
@@ -875,6 +1113,23 @@ export default {
                     padding: 0px 0 20px 0;
                     float: right;
                 }
+            }
+        }
+        .relationshipContent{
+            width: 100%;
+            margin: 20px 0 30px 0;
+            &>p{
+                text-align: center;
+                font-size: 24px;
+            }
+            .relationshipBody{
+                padding: 20px 0 20px 0;
+            }
+            .b_div{
+                border: 1px solid #ccc;
+                min-height: 400px;
+                border-radius: 5px;
+                padding: 20px 0 20px 0;
             }
         }
     }

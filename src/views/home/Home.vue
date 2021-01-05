@@ -127,6 +127,7 @@ const images = [
   require('./assets/c3.svg'),
   require('./assets/c4.svg'),
   require('./assets/c5.svg'),
+  require('./assets/c6.svg'),
 ]
 
 let network = null
@@ -222,7 +223,7 @@ export default {
           label: node.name,
           title: node.name,
           value: node.value ?? (4 + Math.ceil(Math.random() * 5)),
-          image: img,
+          image: img || '',
           shape: 'image',
           node_type: node.category,
           source: node.source

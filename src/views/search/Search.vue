@@ -43,9 +43,9 @@
         <p class="question" @click="clickQuestion('主路径敏化法')">3.主路径敏化法</p>
         <p class="question" @click="clickQuestion('中国科学院156工程处')">4.中国科学院156工程处</p>
         <h4 class="questionTitle">二、搜索实体的信息</h4>
-        <p class="question" @click="clickQuestion('156计算机发明于哪一时期？')">1.156计算机发明于哪一时期？</p>
-        <p class="question" @click="clickQuestion('905 乙机的主要相关人物是谁？')">2.905 乙机的主要相关人物是谁？</p>
-        <p class="question" @click="clickQuestion('DJS-K1 电子控制机是哪个组织发明的？')">3.DJS-K1 电子控制机是哪个组织发明的？</p>
+        <p class="question" @click="clickQuestion('156机计算机发明于哪一时期？')">1.156机计算机发明于哪一时期？</p>
+        <p class="question" @click="clickQuestion('905乙机的主要相关人物是谁？')">2.905乙机的主要相关人物是谁？</p>
+        <p class="question" @click="clickQuestion('DJS-K1机的研制组织是谁？')">3.DJS-K1机的研制组织是谁？</p>
         <h4 class="questionTitle">三、搜索实体之间的关系</h4>
         <p class="question" @click="clickQuestion('中国科学院156工程处是由哪些组织合并成立的？')">1.中国科学院156工程处是由哪些组织合并成立的？</p>
         <p class="question" @click="clickQuestion('中国科学技术大学计算机专业创始人是谁？')">2.中国科学技术大学计算机专业创始人是谁？</p>
