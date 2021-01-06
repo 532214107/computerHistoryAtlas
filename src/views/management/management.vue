@@ -66,12 +66,14 @@
                     :data="tableData"
                     border
                     class="table"
-                >
+                >   
                     <el-table-column
-                        v-for="(item, index) in tableTitle.slice(0, 4)"
-                        :key="index"
-                        :prop="item"
-                        :label="item">
+                        prop="name"
+                        label="名称">
+                    </el-table-column>
+                    <el-table-column
+                        prop="category"
+                        label="类别">
                     </el-table-column>
                     <el-table-column
                         label="操作"
@@ -104,6 +106,7 @@
                         </el-option>
                     </el-select>
               </div>
+               <p class="messageBox">文档需包含但不限于以下属性：<span v-for="(item, key) in properties" :key="key">{{key == 'name' ? "" : key == "category" ? "" : key + '；'}}</span></p>
               <div class="uploadBoxContent">
                     <el-upload
                         class="upload-demo"
@@ -249,7 +252,7 @@
                                     </el-table-column>
                                     <el-table-column
                                         prop="name"
-                                        label="name">
+                                        label="名称">
                                     </el-table-column>
                                     <el-table-column
                                         prop="category"
@@ -281,7 +284,7 @@
                                     </el-table-column>
                                     <el-table-column
                                         prop="name"
-                                        label="name">
+                                        label="名称">
                                     </el-table-column>
                                     <el-table-column
                                         prop="category"
@@ -425,6 +428,7 @@ export default {
             newMatchList: [],
             userSchemaRes: null,
             uploadEntityType: null,
+            key_property: {},
             properties: [],
             uploadEntityTableList: [],
             entityName1: null,
@@ -690,11 +694,12 @@ export default {
                 this.uploadEntityTableList.forEach(item=>{
                     obj[item.name] = item.value
                 })
-                if(obj.name){
+                if(obj[this.key_property.name]){
                     obj.category = this.uploadEntityType
                     let formData = new FormData()
                     formData.append("type", "node")
                     formData.append("node", JSON.stringify(obj))
+                    formData.append("key_property", JSON.stringify(this.key_property))
                     singleUpload(formData).then(res=>{
                         if(res.status == "success"){
                             this.$message({
@@ -713,7 +718,7 @@ export default {
                 }else{
                     this.$message({
                         type: "warning",
-                        message: "请填写name属性的属性值。"
+                        message: `请填写 "${this.key_property.name}" 属性的属性值。`
                     })
                 }
             }else{
@@ -722,7 +727,6 @@ export default {
                     message: "请先选择实体"
                 })
             }
-            
         },
         // 点击高级检索
         clickAdvancedSearch(){
@@ -803,18 +807,17 @@ export default {
             this.matchedList.forEach(item => {
                 property_to_col[item[1]] = item[0]
             })
-
+            let a = this.StandardList[0]
             let req = {
                 filename,
                 entity_name,
-                property_to_col
+                property_to_col,
+                key_property: a.key_property
             }
             let formData = new FormData()
             this.userSchemaRes.map = []
             this.userSchemaRes.map.push(req)
-            for(let key in this.userSchemaRes){
-                formData.append(key, JSON.stringify(this.userSchemaRes[key]))
-            }
+            formData.append('map', JSON.stringify(this.userSchemaRes.map))
             batchUpload(formData).then(res=>{
                 if(res.status == 'success'){
                     this.$message({
@@ -980,8 +983,10 @@ export default {
             entities.forEach(item=>{
                 if(item.entity_name == val){
                     properties = Object.keys(item.properties)
+                    this.key_property = item.key_property
                 }
             })
+            
             this.uploadEntityTableList = []
             properties.forEach(item=>{
                 if(item != 'category'){
@@ -991,6 +996,11 @@ export default {
                     })
                 }
             })
+        },
+        upLoadSelectValue(val){
+           this.properties = this.selectOption.filter(item => {
+                return item.entity_name == val
+            })[0].properties
         }
     }
 }
@@ -1130,6 +1140,14 @@ export default {
                 min-height: 400px;
                 border-radius: 5px;
                 padding: 20px 0 20px 0;
+            }
+        }
+        .messageBox{
+            padding: 10px 0 10px 0;
+            font-size: 12px;
+            color: #333;
+            &>span{
+                color: red;
             }
         }
     }

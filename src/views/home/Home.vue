@@ -1,11 +1,14 @@
 <template>
   <div class="home-page">
     <div
-      class="network-container"
+      class="network-container mainBox"
       v-loading="loading"
       :element-loading-text="loadingText"
       element-loading-spinner="el-icon-loading">
       <div id="mynetwork"></div>
+      <div class="toptipBox" v-show="isSHowToptip" :style="{left: toptipX, top: toptipY}">
+          {{toptipText}}
+      </div>
       <div class="network-bar">
         <div
           v-for="nt in networkBarList"
@@ -106,7 +109,6 @@
         </tbody>
       </table>
     </el-dialog>
-    
   </div>
 </template>
 
@@ -174,12 +176,16 @@ export default {
       clickNodeName: null,
       nodeData: [],
       linkData: [],
-      value1: 50,
+      value1: 30,
       value2: 50,
       params: {
         node_limit: 0.5,
         link_limit: 0.5
-      }
+      },
+      isSHowToptip: false,
+      toptipX: 0,
+      toptipY: 0,
+      toptipText: null,
     }
   },
   created () {
@@ -237,7 +243,8 @@ export default {
           to: edge.target ,
           width: edge.value ?? 3,
           dashes: edge.dashes ?? true,
-          font: { align: 'middle' }
+          font: { align: 'middle' },
+          title: edge.name
         }
       })
       this.nodeData = nodes
@@ -326,6 +333,20 @@ export default {
             network.setOptions(options)
           }, 200)
         })
+        let that = this
+        network.on('hoverEdge',function(properties){
+            let item = that.getEdgeMsg(properties.edge)
+            that.toptipText = item.title
+            that.toptipX = properties.event.offsetX + 15 + 'px'
+            that.toptipY = properties.event.offsetY + 15 + 'px'
+            that.isSHowToptip = true
+        });
+
+        network.on('blurEdge',function(properties){
+            that.toptipX = 0
+            that.toptipY = 0
+            that.isSHowToptip = false
+        });
 
         network.on('stabilizationProgress', (params) => {
           this.loading = true
@@ -420,12 +441,37 @@ export default {
     changeValue2(val){
       this.params.link_limit = val/100
       this.init()
-    }
+    },
+    getEdgeMsg(edgeId){
+        let edgeMsg = {}
+        this.linkData.forEach(item => {
+            if(item.id == edgeId){
+                edgeMsg = item
+                return 
+            }
+        })
+        return edgeMsg
+    },
   }
 }
 </script>
 
 <style lang="less" scoped>
+.mainBox{
+    position: relative;
+    .toptipBox{
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #fff;
+        line-height: 30px;
+        padding: 0 5px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
   .layout-header {
     display: flex;
     align-items: center;
@@ -627,4 +673,15 @@ export default {
     font-weight: bold;
     padding-bottom: 20px;
   }
+  .tooltipBox{
+    position: absolute;
+    width: 500px;
+    font-size: 14px;
+    text-indent: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 999;
+}
 </style>
